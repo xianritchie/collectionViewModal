@@ -11,6 +11,9 @@
 		6D798B4A196AFF7700370D91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D798B49196AFF7700370D91 /* AppDelegate.m */; };
 		6D798B4C196AFF7700370D91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D798B4B196AFF7700370D91 /* Images.xcassets */; };
 		6D798B58196AFF7700370D91 /* CollectionViewModalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D798B57196AFF7700370D91 /* CollectionViewModalTests.m */; };
+		6D798B63196AFFFE00370D91 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D798B62196AFFFE00370D91 /* CollectionViewController.m */; };
+		6D798B6B196B22DF00370D91 /* BlurredModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D798B6A196B22DF00370D91 /* BlurredModalView.m */; };
+		6DCC654B196C35EC002629C2 /* ColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC654A196C35EC002629C2 /* ColorHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,12 @@
 		6D798B51196AFF7700370D91 /* CollectionViewModalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewModalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D798B56196AFF7700370D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D798B57196AFF7700370D91 /* CollectionViewModalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewModalTests.m; sourceTree = "<group>"; };
+		6D798B61196AFFFE00370D91 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		6D798B62196AFFFE00370D91 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		6D798B69196B22DF00370D91 /* BlurredModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurredModalView.h; sourceTree = "<group>"; };
+		6D798B6A196B22DF00370D91 /* BlurredModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurredModalView.m; sourceTree = "<group>"; };
+		6DCC6549196C35EC002629C2 /* ColorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHelper.h; sourceTree = "<group>"; };
+		6DCC654A196C35EC002629C2 /* ColorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,12 @@
 		6D798B38196AFF7700370D91 = {
 			isa = PBXGroup;
 			children = (
+				6D798B61196AFFFE00370D91 /* CollectionViewController.h */,
+				6D798B62196AFFFE00370D91 /* CollectionViewController.m */,
+				6DCC6549196C35EC002629C2 /* ColorHelper.h */,
+				6DCC654A196C35EC002629C2 /* ColorHelper.m */,
+				6D798B69196B22DF00370D91 /* BlurredModalView.h */,
+				6D798B6A196B22DF00370D91 /* BlurredModalView.m */,
 				6D798B43196AFF7700370D91 /* CollectionViewModal */,
 				6D798B54196AFF7700370D91 /* CollectionViewModalTests */,
 				6D798B42196AFF7700370D91 /* Products */,
@@ -206,7 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D798B4A196AFF7700370D91 /* AppDelegate.m in Sources */,
+				6DCC654B196C35EC002629C2 /* ColorHelper.m in Sources */,
 				6D798B47196AFF7700370D91 /* main.m in Sources */,
+				6D798B63196AFFFE00370D91 /* CollectionViewController.m in Sources */,
+				6D798B6B196B22DF00370D91 /* BlurredModalView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CollectionViewModal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -324,6 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CollectionViewModal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -384,6 +404,7 @@
 				6D798B5D196AFF7700370D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D798B5E196AFF7700370D91 /* Build configuration list for PBXNativeTarget "CollectionViewModalTests" */ = {
 			isa = XCConfigurationList;
@@ -392,6 +413,7 @@
 				6D798B60196AFF7700370D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

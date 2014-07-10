@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface blurredView : UIView
+@interface BlurredModalView : UIView
+
+-(void)createModalViewWithInitialFrame:(CGRect)frame xOffset:(CGFloat)xOffset yOffset:(CGFloat)yOffset;
 
 @end
